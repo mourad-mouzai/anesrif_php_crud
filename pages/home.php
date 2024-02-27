@@ -81,7 +81,6 @@ session_start();
   </div>
 </nav>
 
-
 <div class="px-4 sm:px-6 lg:px-8">
   <div class="sm:flex sm:items-center">
     <div class="sm:flex-auto">
@@ -111,6 +110,9 @@ session_start();
                 <tr>
                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"><?php echo $row["name"]?></td>
                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?php echo $row["email"]?></td>
+                    <td class="relative whitespace-nowrap py-4 w-6 pl-3  text-right text-sm font-medium sm:pr-6">
+                        <a href="Blugs.php?id=<?php echo $row['id']?>" class="text-indigo-600 hover:text-indigo-900">Blogs<span class="sr-only"></span></a>
+                    </td>
                     <td class="relative whitespace-nowrap py-4 w-6 pl-3  text-right text-sm font-medium sm:pr-6">
                         <a href="update.php?id=<?php echo $row['id']?>" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only"></span></a>
                     </td>
